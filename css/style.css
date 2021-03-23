@@ -32,7 +32,7 @@ h2{
 }
 
 h3{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 1.75em;
   font-weight:400;
 }
@@ -89,9 +89,11 @@ text-decoration: none;
 
 .button.contact
 {background-color:rgba(58,14,3);
-color:rgba(251,186,178);
-text-transform: uppercase;
-border: 2px solid #ffffff
+color:#FEE3E0;
+font-family: 'Quicksand', sans-serif;
+text-decoration: none;
+padding: 10px;
+border: .33px solid #FEE3E0;
 }
 
 .button.contact:hover
