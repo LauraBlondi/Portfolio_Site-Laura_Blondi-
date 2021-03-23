@@ -1,1 +1,100 @@
-body {background-color: light-grey}
+body {
+  background-color: #212121;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px; /*sets font size to size 16*/
+  font-weight: 300;
+  line-height; 1.6;
+  color: #FEE3E0;
+}
+/*Colors Used
+  Color 1: rgba(251,186,178)
+  Color 2: rgba(241.156,121)
+  Color 3: rgba(164,74,63)
+  Color 4: rgba(76,5,20)
+  Color 5: rgba(58,14,3)
+*/
+
+h1,h2,h3,h4 {
+  line-height:1.4;
+}
+
+h1{
+  font-family: 'Quicksand', sans-serif;
+  font-size:2.75em;
+  font-weight:500;
+}
+
+h2{
+  font-family: 'Open Sans', sans-serif;
+  font-size:2.25em;
+  font-weight: 600;
+}
+
+h3{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.75em;
+  font-weight:400;
+}
+
+h4{
+  font-family: 'Open Sans', sans-serif;
+  font-size:1.35em;
+  font-weight:300;
+}
+
+#logo {
+  width:100px;
+  height:100px;
+}
+
+img {width:100%;
+    height: auto;
+}
+
+a {
+  color:#F19C79;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #A44A3F;
+  text-decoration: underline;
+}
+
+a:active
+{color:rgba(76,5,20)
+ }
+
+.button
+{display: inline-block;
+background-color: #A44A3F;
+color: #ffffff;
+font-weight:400;
+padding: 14px;
+border-radius:6px ;
+transition: 0.2s opacity;
+}
+
+.button:hover
+{opacity: .8;
+text-decoration: none;
+}
+
+.button:active
+{opacity: .8;
+text-decoration: none;
+}
+
+.button.contact
+{background-color:rgba(58,14,3);
+color:rgba(251,186,178);
+text-transform: uppercase;
+border: 2px solid #ffffff
+}
+
+.button.contact:hover
+{background-color:rgba(251,186,178);
+ color: rgba(58,14,3);
+}
