@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #212121;
   font-family: 'Open Sans', sans-serif;
@@ -14,6 +18,55 @@ body {
   Color 4: rgba(76,5,20)
   Color 5: rgba(58,14,3)
 */
+
+header{
+  background-color: #220802;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  border-bottom: 2px solid #F19C79;
+  width: 100%;
+  display: inline-block;
+
+}
+
+main {
+  padding-top: 133px;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul{
+  list-style: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  color: rgba(241.156,121);
+}
+
+nav > ul > li > a:hover {
+  color:rgba(241.156,121);
+  text-decoration: underline;
+}
+
+nav > ul > li > a:focus {
+  color:rgba(241.156,121);
+  text-decoration: underline;
+}
+
+nav > ul > li > a:active{
+  color:rgba(76,5,20)
+ }
 
 h1,h2,h3,h4 {
   line-height:1.4;
@@ -44,16 +97,19 @@ h4{
 }
 
 #logo {
-  width:100px;
-  height:100px;
+  max-width: 130px;
 }
+
 
 #mypicture {
-  width:auto;
-  height:569px;
+  width: auto;
+  height:455px;
+  float: left;
+
 }
 
-img {width:100%;
+img {
+    width:100%;
     height: auto;
 }
 
@@ -105,3 +161,83 @@ border: .33px solid #FEE3E0;
 {background-color:rgba(251,186,178);
  color: rgba(58,14,3);
 }
+
+/* Layout styling */
+.container {
+  padding: 0 15px
+}
+
+.row{
+  margin: 25px 0;
+  border-bottom: 4px
+}
+
+#work .row {padding-bottom: 8px;
+          }
+#hero {
+    background-color: #A44A3F;
+    display: inline-block;
+    width:100%;
+    padding-top:50px;
+}
+
+#hero h1 {
+  text-align: center;
+  color: #000000
+}
+
+#hero p {
+  text-align: center;
+  color: #ffffff;
+}
+
+
+#contact h2 {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif
+}
+
+#contact svg {
+  width:auto;
+  height: 45px;
+}
+
+#copyright p {
+  text-align: center;
+}
+
+#contact {
+  background-color: #220802;
+  text-align:center;
+  padding: 10px 0;
+  width: 100%;
+  border-top: 2px solid #F19C79
+}
+
+.social>ul {
+  list-style-type: none;
+ padding: 0;
+}
+
+.social>ul>li {
+  display: inline-block;
+  padding: 20px 8px;
+}
+
+#my_story {
+padding-top: 200px
+}
+
+#my_story h1{
+  text-align: center;
+  color: rgba(241.156,121);
+}
+
+#my_story h2 {
+  text-align: center;
+}
+
+
+
+.row {
+  margin: 10px 0;
