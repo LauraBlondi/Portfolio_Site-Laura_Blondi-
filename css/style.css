@@ -238,6 +238,24 @@ padding-top: 200px
 }
 
 
+#Project4_Gray {
+  padding-top: 200px;
+}
 
-.row {
-  margin: 10px 0;
+#Project4_Gray h1 {
+  text-align: center;
+
+}
+
+
+#Project4_Gray h2 {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#casestudy4{
+  padding-left: -left: 20px;
+  padding-right: 20px;
+  width: 1000px;
+  height: auto;
+}
