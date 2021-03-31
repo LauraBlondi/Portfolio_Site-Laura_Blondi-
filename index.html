@@ -16,27 +16,29 @@
   <body id="home">
     <header>
       <div class="container">
-      <nav>
-          <a href="index.html">
-            <picture>
-              <source srcset="imgs/logo@1x.png" media="max-width:767px">
-              <img id="logo" src="imgs/logo@2x.png" alt="Laura Blondi">
-            </picture>
-          </a>
+        <a href="index.html">
+          <picture>
+            <source srcset="imgs/logo@1x.png" media="max-width:767px">
+            <img id="logo" src="imgs/logo@2x.png" alt="Laura Blondi">
+          </picture>
+        </a>
+        <nav>
           <ul>
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-        </div>
       </nav>
+      </div>
     </header>
 
     <main>
-        <div id="hero">
-      <div class="container">
+      <div id="hero">
+        <div class="container">
           <h1>Hi I'm Laura </h1>
-          <span><h1>I'm a UI/UX Designer from NYC</span>
+
+            <h1>I'm a UI/UX Designer from NYC</h1>
+
           <p>I’m dedicated to helping people and the world around us through user centric design</p>
 
         </div>
@@ -44,81 +46,105 @@
 
       <div id="work">
         <div class="container">
-          <h2>My Work</h2>
+            <h2>My Work</h2>
           <div class="row">
-            <div>
-            </div>
+
+            <!-- open row that holds (2) columns for project 1 -->
+            <div class="col-md-6 col-lg-8 col-xl-4">
+              <!-- open first column (used for image) -->
+              <picture>
+                <source srcset="imgs/Homepage/Project4_Gray@1x.png" media="(max-width:767px)">
+                <img src="imgs/Homepage/Project4_Gray@2x.png" alt="Gray Case Study">
+              </picture>
+            </div><!-- end first column -->
+            <div class="col-md-6 col-lg-8 col-xl-4">
+              <!-- open second column (used for text) -->
+              <h3>Gray</h3> <!-- heading for the project 1 -->
+              <p>Native app designed to help users learn to network and apply for jobs in order to get a leg up within their career field.</p>
+
+              <p>Competitor Analysis, User Research, Wireframing, User Testing, and Prototyping</p>
+              <a href="gray.html" class="button">Read more</a>
+            </div><!-- end second column -->
+          </div><!-- end row that holds (2) columns for project 1 -->
+
+
+
+          <!--project 2-->
+          <div class="row">
+            <!-- open row that holds (2) columns for project 2 -->
+
+            <div class="col-md-6 col-lg-8 col-xl-4">
+              <!-- open first column (used for text) -->
+              <picture>
+                <source srcset="imgs/Homepage/Project5_Shaded@1x.png" media="(max-width:767px)">
+                <img src="imgs/Homepage/Project5_Shaded@2x.png" alt="Shaded Case Study">
+              </picture>
+
+            </div><!-- end first column -->
           </div>
-          <!--project 1-->
-          <div>
-            <h3>Gray</h3>
-            <p>Native app designed to help users learn to network and apply for jobs in order to get a leg up within their career field.</p>
-            <p>Competitor Analysis, User Research, Wireframing, User Testing, and Prototyping</p>
-            <a href="gray.html" class="button">Read more</a>
-            <div>
-                    <div class="row">
-                <picture>
-                  <source srcset="imgs/Homepage/Project4_Gray@1x.png" media="(max-width:767px)">
-                  <img src="imgs/Homepage/Project4_Gray@2x.png" alt="Gray Case Study">
-                </picture>
-              </div>
-            </div>
+          <div class="col-md-6 col-lg-8 col-xl-4">
+            <!-- open second column (used for image) -->
+            
+            <h3>Shaded</h3>
+            <p>An E-commerce mobile app for a cohesive online eyewear brand that helps users find products quickly to match their style needs.</p>
+            <p>Branding Document, Style guide, Competitor Analysis, Wireframing, Mockups, and Prototyping</p>
+            <a href="" class="button">Read more</a>
+          </div><!-- end second column -->
+        </div><!-- end row that holds (2) columns for project 2 -->
 
-            <!--project 2-->
-            <div>
-              <h3>Shaded</h3>
-              <p>An E-commerce mobile app for a cohesive online eyewear brand that helps users find products quickly to match their style needs.</p>
-              <p>Branding Document, Style guide, Competitor Analysis, Wireframing, Mockups, and Prototyping</p>
-              <a href="" class="button">Read more</a>
-                  <div class="row">
-                <picture>
-                  <source srcset="imgs/Homepage/Project5_Shaded@1x.png" media="(max-width:767px)">
-                  <img src="imgs/Homepage/Project5_Shaded@2x.png" alt="Shaded Case Study">
-                </picture>
-              </div>
-            </div>
 
-            <!--project 3-->
-            <div>
-              <h3>Truffle</h3>
-              <p>Bored of meal prepping the same recipes? Truffle is a responsive web app that allows users to find a variety of new recipes tailored to their dietary needs and taste profile.</p>
-              <p>User Interviews, User and Market Research, A/B Testing, Wireframing, and Prototyping</p>
-              <a href="" class="button">Read more</a>
-                  <div class="row">
-                <picture>
-                  <source srcset="imgs/Homepage/Project3_Truffle@1x.png" media="(max-width:767px)">
-                  <img src="imgs/Homepage/Project3_Truffle@2x.png" alt="Truffle Case Study">
-                </picture>
-              </div>
-            </div>
+  <!--project 3-->
+        <div class="row">
+          <!-- open row that holds (2) columns for project 3 -->
+          <div class="col-md-6 col-lg-8 col-xl-4">
+            <!-- open first column -->
+            <picture>
+              <source srcset="imgs/Homepage/Project3_Truffle@1x.png" media="(max-width:767px)">
+              <img src="imgs/Homepage/Project3_Truffle@2x.png" alt="Truffle Case Study">
+            </picture>
 
-            <!--project 4-->
-            <div>
-              <h3>Vibesy</h3>
-              <p>A mobile app designed to help users find, listen, and share new music.</p>
-              <p>User Flows, Style Guide, Icon Design, Wireframing</p>
-              <a href="" class="button">Read more</a>
-                  <div class="row">
-                <picture>
-                  <source srcset="imgs/Homepage/Project1_Vibesy@1x.png" media="(max-width:767px)">
-                  <img src="imgs/Homepage/Project1_Vibesy@2x.png" alt="Vibesy Case Study">
-                </picture>
-              </div>
-            </div>
+          </div><!-- end first column -->
+          <div class="col-md-6 col-lg-8 col-xl-4">
+            <!-- open second column (used for text) -->
+            <h3>Truffle</h3>
+            <p>Bored of meal prepping the same recipes? Truffle is a responsive web app that allows users to find a variety of new recipes tailored to their dietary needs and taste profile.</p>
+            <p>User Interviews, User and Market Research, A/B Testing, Wireframing, and Prototyping</p>
+            <a href="" class="button">Read more</a>
 
+
+          </div><!-- end second column -->
+        </div>
+
+        <!--project 4-->
+        <div class="row">
+          <!-- open row that holds (2) columns for project43 -->
+          <div class="col-md-6 col-lg-8 col-xl-4">
+            <!-- open first column (used for image) -->
+            <picture>
+              <source srcset="imgs/Homepage/Project1_Vibesy@1x.png" media="(max-width:767px)">
+              <img src="imgs/Homepage/Project1_Vibesy@2x.png" alt="Vibesy Case Study">
+            </picture>
+          </div><!-- end first column -->
+          <div class="col-md-6 col-lg-8 col-xl-4">
+            <!-- open second column (used for text) -->
+
+            <h3>Vibesy</h3>
+            <p>A mobile app designed to help users find, listen, and share new music.</p>
+            <p>User Flows, Style Guide, Icon Design, Wireframing</p>
+            <a href="" class="button">Read more</a>
           </div>
-
         </div>
 
       </div>
-    </main>
-    <div>
-    </div>
-    <div>
-    </div>
 
-    <footer id="contact">
-      <div class="container">
+
+    </main>
+
+
+    <div class="row"> </div>
+    <!-- For the footer  -->
+    <footer>
+      <div id="contact">
         <h2>Let's work together!</h2>
         <p>I'm currently available for work in the greater NYC area or remotely. Do I sound like a good fit for your team? Shoot me a message, and let's have a chat.</p>
         <div>

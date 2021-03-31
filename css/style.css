@@ -6,11 +6,13 @@ body {
   background-color: #212121;
   font-family: 'Open Sans', sans-serif;
   font-family: 'Quicksand', sans-serif;
-  font-size: 16px; /*sets font size to size 16*/
+  font-size: 14px;
+  /*sets font size to size 16*/
   font-weight: 300;
   line-height: 1.6;
   color: #FEE3E0;
 }
+
 /*Colors Used
   Color 1: rgba(251,186,178)
   Color 2: rgba(241.156,121)
@@ -18,8 +20,7 @@ body {
   Color 4: rgba(76,5,20)
   Color 5: rgba(58,14,3)
 */
-
-header{
+header {
   background-color: #220802;
   text-align: center;
   padding: 10px 0;
@@ -27,7 +28,6 @@ header{
   border-bottom: 2px solid #F19C79;
   width: 100%;
   display: inline-block;
-
 }
 
 main {
@@ -39,82 +39,80 @@ nav {
   width: 100%;
 }
 
-nav > ul{
+nav>ul {
   list-style: none;
   padding: 0;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
-  color: rgba(241.156,121);
+  color: rgba(241.156, 121);
 }
 
-nav > ul > li > a:hover {
-  color:rgba(241.156,121);
+nav>ul>li>a:hover {
+  color: rgba(241.156, 121);
   text-decoration: underline;
 }
 
-nav > ul > li > a:focus {
-  color:rgba(241.156,121);
+nav>ul>li>a:focus {
+  color: rgba(241.156, 121);
   text-decoration: underline;
 }
 
-nav > ul > li > a:active{
-  color:rgba(76,5,20)
- }
-
-h1,h2,h3,h4 {
-  line-height:1.4;
+nav>ul>li>a:active {
+  color: rgba(76, 5, 20)
 }
 
-h1{
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+
+h1 {
   font-family: 'Quicksand', sans-serif;
-  font-size:2.75em;
-  font-weight:500;
+  font-size: 2.75em;
+  font-weight: 500;
 }
 
-h2{
+h2 {
   font-family: 'Open Sans', sans-serif;
-  font-size:2.25em;
+  font-size: 2.25em;
   font-weight: 600;
 }
 
-h3{
+h3 {
   font-family: 'Quicksand', sans-serif;
   font-size: 1.75em;
-  font-weight:400;
+  font-weight: 400;
 }
 
-h4{
+h4 {
   font-family: 'Open Sans', sans-serif;
-  font-size:1.35em;
-  font-weight:300;
+  font-size: 1.35em;
+  font-weight: 300;
 }
 
 #logo {
   max-width: 130px;
 }
 
-
 #mypicture {
   width: auto;
-  height:455px;
+  height: 455px;
   float: left;
-
 }
 
 img {
-    width:100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 a {
-  color:#F19C79;
+  color: #F19C79;
   text-decoration: none;
 }
 
@@ -124,42 +122,42 @@ a:focus {
   text-decoration: underline;
 }
 
-a:active
-{color:rgba(76,5,20)
- }
-
-.button
-{display: inline-block;
-background-color: #A44A3F;
-color: #ffffff;
-font-weight:400;
-padding: 14px;
-border-radius:6px ;
-transition: 0.2s opacity;
+a:active {
+  color: rgba(76, 5, 20)
 }
 
-.button:hover
-{opacity: .8;
-text-decoration: none;
+.button {
+  display: inline-block;
+  background-color: #A44A3F;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 14px;
+  border-radius: 6px;
+  transition: 0.2s opacity;
 }
 
-.button:active
-{opacity: .8;
-text-decoration: none;
+.button:hover {
+  opacity: .8;
+  text-decoration: none;
 }
 
-.button.contact
-{background-color:rgba(58,14,3);
-color:#FEE3E0;
-font-family: 'Quicksand', sans-serif;
-text-decoration: none;
-padding: 10px;
-border: .33px solid #FEE3E0;
+.button:active {
+  opacity: .8;
+  text-decoration: none;
 }
 
-.button.contact:hover
-{background-color:rgba(251,186,178);
- color: rgba(58,14,3);
+.button.contact {
+  background-color: rgba(58, 14, 3);
+  color: #FEE3E0;
+  font-family: 'Quicksand', sans-serif;
+  text-decoration: none;
+  padding: 10px;
+  border: .33px solid #FEE3E0;
+}
+
+.button.contact:hover {
+  background-color: rgba(251, 186, 178);
+  color: rgba(58, 14, 3);
 }
 
 /* Layout styling */
@@ -167,18 +165,24 @@ border: .33px solid #FEE3E0;
   padding: 0 15px
 }
 
-.row{
+.row {
   margin: 25px 0;
   border-bottom: 4px
 }
 
-#work .row {padding-bottom: 8px;
-          }
+#work .row {
+  padding-bottom: 8px;
+}
+
+#work h2 {
+  text-align: center;
+}
+
 #hero {
-    background-color: #A44A3F;
-    display: inline-block;
-    width:100%;
-    padding-top:50px;
+  background-color: #A44A3F;
+  display: inline-block;
+  width: 100%;
+  padding-top: 50px;
 }
 
 #hero h1 {
@@ -189,8 +193,12 @@ border: .33px solid #FEE3E0;
 #hero p {
   text-align: center;
   color: #ffffff;
+  font-size: 1.5em;
 }
 
+#hero span {
+  display: block;
+}
 
 #contact h2 {
   text-align: center;
@@ -198,7 +206,7 @@ border: .33px solid #FEE3E0;
 }
 
 #contact svg {
-  width:auto;
+  width: auto;
   height: 45px;
 }
 
@@ -206,17 +214,17 @@ border: .33px solid #FEE3E0;
   text-align: center;
 }
 
-#contact {
+footer {
   background-color: #220802;
-  text-align:center;
+  text-align: center;
   padding: 10px 0;
   width: 100%;
-  border-top: 2px solid #F19C79
+  border-top: 2px solid #F19C79;
 }
 
 .social>ul {
   list-style-type: none;
- padding: 0;
+  padding: 0;
 }
 
 .social>ul>li {
@@ -225,18 +233,17 @@ border: .33px solid #FEE3E0;
 }
 
 #my_story {
-padding-top: 200px
+  padding-top: 200px
 }
 
-#my_story h1{
+#my_story h1 {
   text-align: center;
-  color: rgba(241.156,121);
+  color: rgba(241.156, 121);
 }
 
 #my_story h2 {
   text-align: center;
 }
-
 
 #Project4_Gray {
   padding-top: 200px;
@@ -244,18 +251,61 @@ padding-top: 200px
 
 #Project4_Gray h1 {
   text-align: center;
-
 }
-
 
 #Project4_Gray h2 {
   text-align: center;
   font-family: 'Quicksand', sans-serif;
 }
 
-#casestudy4{
+#casestudy4 {
   padding-left: 20px;
   padding-right: 20px;
   width: 1000px;
   height: auto;
 }
+
+[class*="col-"] {
+  float: left;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*=================================
+Medium devices (640px and higher)
+==================================*/
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 25px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+    float: left;
+  }
+
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+  @media only screen and (min-width: 1024px) {
+
+
+  }
+
+
+  /* ==============================
+X-large devices (1440px or larger)
+================================= */
+  @media only screen and (min-width: 1440px) {}
