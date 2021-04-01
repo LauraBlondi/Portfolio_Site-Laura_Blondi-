@@ -104,7 +104,10 @@ h4 {
   width: auto;
   height: 455px;
   float: left;
+  padding-left: 10px;
+  padding-right: 10px;
 }
+
 
 img {
   width: 100%;
@@ -241,6 +244,11 @@ footer {
   color: rgba(241.156, 121);
 }
 
+#my_story p {
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
 #my_story h2 {
   text-align: center;
 }
@@ -271,10 +279,19 @@ footer {
   float: left;
 }
 
+.reverseimg [class*="col-"] {
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+}
 .row::after {
   content: "";
   clear: both;
   display: table;
+}
+
+#about h3 {
+  margin-top: 0;
 }
 /*=================================
 Medium devices (640px and higher)
@@ -302,8 +319,13 @@ Medium devices (640px and higher)
 Large devices (1024px or larger)
 ================================= */
   @media only screen and (min-width: 1024px) {
+    .col-md-7 {
+      width: 41.66%;
+    }
 
-
+    .col-md-5 {
+      width: 58.33%;
+    }
   }
 
 
