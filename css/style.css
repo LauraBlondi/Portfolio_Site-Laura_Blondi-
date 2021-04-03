@@ -101,12 +101,11 @@ h4 {
 }
 
 
-
-
 img {
   width: 100%;
   height: auto;
 }
+
 
 a {
   color: #F19C79;
@@ -233,38 +232,7 @@ footer {
   padding: 20px 8px;
 }
 
-#aboutme{
-  padding-top: 150px;
 
-}
-
-
-#mypicture {
-  width: auto;
-  height: 455px;
-  border-radius: 10px;
-  border: 3px solid rgba(164,74,63);
-  margin-left: 18px;
-  margin-right:18px;
-
-}
-
-#aboutme{
-  padding-top:180px;
-}
-
-#my_story h1 {
-  text-align: center;
-  color: rgba(241.156, 121);
-}
-
-#my_story p {
-  text-align: justify;
-
-}
-#my_story h2 {
-  text-align: center;
-}
 
 #Project4_Gray {
   padding-top: 180px;
@@ -287,6 +255,29 @@ footer {
   max-width: 100px;
   height: auto;
 }
+
+
+
+#aboutimage {
+  max-width: 300px
+}
+
+#aboutme{
+  padding-top:180px;
+}
+
+#aboutme h1{
+  text-align: center;
+}
+
+#aboutme h2{
+  text-align: center;
+}
+
+#skills h3{
+  text-align: center;
+}
+
 
 [class*="col-"] {
   padding-left: 10px;
@@ -373,6 +364,13 @@ Medium devices (640px and higher)
     width: 58.33%;
   }
 
+  #aboutimage {
+    float: left;
+    margin: 0 12px 12px 0;
+    max-width: 300px;
+    border-radius: 10px;
+    border: 3px solid rgba(164,74,63);
+  }
 
 }
 
