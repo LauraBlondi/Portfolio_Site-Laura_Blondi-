@@ -176,6 +176,9 @@ a:active {
 
 #work h2 {
   text-align: center;
+  font-size: 2.5em;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 
 #hero {
@@ -433,7 +436,7 @@ portaitmockup{
   to {transform: translate(200px, 50px);} }
 
   .illustration {
-    margin-left: 285px;
+    margin-left: 300px;
     margin-top: 100px
   }
 
