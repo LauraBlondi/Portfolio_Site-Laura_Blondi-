@@ -308,23 +308,10 @@ footer {
   100% {fill: #f76414;}
 }
 
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
 
-.cloud-front {
-  animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
 
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
-}
+
+
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
@@ -337,6 +324,7 @@ footer {
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
 
 /*=================================
 Medium devices (640px and higher)
@@ -385,7 +373,36 @@ Large devices (1024px or larger)
     .col-lg-5 {
       width: 41.66%;
     }
-  }
+
+    div.borderXwidth a:before, div.borderXwidth a:after
+    {
+        position: absolute;
+        opacity: 0;
+        width: 0%;
+        height: 2px;
+        content: '';
+        background: #FFF;
+        transition: all 0.3s;
+    }
+
+    div.borderXwidth a:before
+    {
+        left: 0px;
+        top: 0px;
+    }
+
+  div.borderXwidth a:after
+    {
+        right: 0px;
+        bottom: 0px;
+    }
+
+    div.borderXwidth a:hover:before, div.borderXwidth a:hover:after
+    {
+        opacity: 1;
+        width: 100%;
+    }
+
 
 
   /* ==============================
@@ -395,8 +412,40 @@ X-large devices (1440px or larger)
 
 
 
-berlin-illustration{
-  width: 100%;
-  max-width: 100%;
+portaitmockup{
+  width: 30;
+  max-width: 1200px;
   height: auto;
 }
+
+
+#Cloud {
+  animation-duration: 5s;
+  animation-name: Cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+
+@keyframes Cloud-move{
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px, 50px);} }
+
+  .illustration {
+    margin-left: 285px;
+    margin-top: 100px
+  }
+
+  #Smiley{
+    animation: moveSmiley;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+
+  }
+
+  @keyframes moveSmiley {
+    to {
+      transform: translateY(80px);}}
