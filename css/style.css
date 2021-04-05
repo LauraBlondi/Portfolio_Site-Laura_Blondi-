@@ -457,10 +457,7 @@ portaitmockup{
     }
     }
 
-  @keyframes color-change {
-    from {fill: #E496A0;}
-    to {fill: #D16243;}
-  }
+
 
   @keyframes color-change {
     0% {fill: #E496A0;}
@@ -472,6 +469,6 @@ portaitmockup{
   animation-duration: 4s;
   animation-name: color-change;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in;
   animation-direction: ease;
 }
