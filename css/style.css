@@ -265,19 +265,23 @@ footer {
   max-width: 300px
 }
 
-#aboutme{
+#aboutme {
   padding-top:180px;
 }
 
-#aboutme h1{
+#aboutme h1 {
   text-align: center;
 }
 
-#aboutme h2{
+#aboutme h2 {
   text-align: center;
 }
 
-#skills h3{
+#skills h3 {
+  text-align: center;
+}
+
+.row-about-resume {
   text-align: center;
 }
 
@@ -310,11 +314,6 @@ footer {
   50% {fill: #fcffad;}
   100% {fill: #f76414;}
 }
-
-
-
-
-
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
@@ -377,35 +376,37 @@ Large devices (1024px or larger)
       width: 41.66%;
     }
 
-    div.borderXwidth a:before, div.borderXwidth a:after
-    {
+li.borderXwidth {
+  position: relative;
+}
+
+    li.borderXwidth a:before,
+    li.borderXwidth a:after {
         position: absolute;
         opacity: 0;
         width: 0%;
         height: 2px;
         content: '';
-        background: #FFF;
+        background: #F19C79;
         transition: all 0.3s;
     }
 
-    div.borderXwidth a:before
-    {
+    li.borderXwidth a:before {
         left: 0px;
         top: 0px;
     }
 
-  div.borderXwidth a:after
-    {
+  li.borderXwidth a:after {
         right: 0px;
         bottom: 0px;
     }
 
-    div.borderXwidth a:hover:before, div.borderXwidth a:hover:after
-    {
+    li.borderXwidth a:hover:before,
+    li.borderXwidth a:hover:after {
         opacity: 1;
         width: 100%;
     }
-
+}
 
 
   /* ==============================
@@ -433,14 +434,15 @@ portaitmockup{
 
 @keyframes Cloud-move{
   from {transform: translate(0,50px);}
-  to {transform: translate(200px, 50px);} }
+  to {transform: translate(200px, 50px);}
+}
 
   .illustration {
     margin-left: 300px;
     margin-top: 100px
   }
 
-  #Smiley{
+  #Smiley {
     animation: moveSmiley;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -451,4 +453,25 @@ portaitmockup{
 
   @keyframes moveSmiley {
     to {
-      transform: translateY(80px);}}
+      transform: translateY(80px);
+    }
+    }
+
+  @keyframes color-change {
+    from {fill: #E496A0;}
+    to {fill: #D16243;}
+  }
+
+  @keyframes color-change {
+    0% {fill: #E496A0;}
+    50% {fill: #D16243;}
+    100% {fill: #A44A3F;}
+  }
+
+#screen {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: ease;
+}
