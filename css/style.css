@@ -245,18 +245,17 @@ footer {
 
 #Project4_Gray h1 {
   text-align: center;
-  font-size: 4em
 }
 
 #Project4_Gray h2 {
   text-align: center;
-  padding-left: 50px
   font-family: 'Quicksand', sans-serif;
 }
 
 #casestudy4 {
-  padding-left: 200px;
-  max-width: 800px;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 100px;
   height: auto;
 }
 
@@ -266,19 +265,19 @@ footer {
   max-width: 300px
 }
 
-#aboutme {
+#aboutme{
   padding-top:180px;
 }
 
-#aboutme h1 {
+#aboutme h1{
   text-align: center;
 }
 
-#aboutme h2 {
+#aboutme h2{
   text-align: center;
 }
 
-#skills h3 {
+#skills h3{
   text-align: center;
 }
 
@@ -312,9 +311,7 @@ footer {
   100% {fill: #f76414;}
 }
 
-.row-about-resume{
-  text-align: center;
-}
+
 
 
 
@@ -380,11 +377,8 @@ Large devices (1024px or larger)
       width: 41.66%;
     }
 
-li.borderXwidth {
-    position:relative;
-}
-
-  li.borderXwidth a:before, li.borderXwidth a:after {
+    div.borderXwidth a:before, div.borderXwidth a:after
+    {
         position: absolute;
         opacity: 0;
         width: 0%;
@@ -392,25 +386,27 @@ li.borderXwidth {
         content: '';
         background: #FFF;
         transition: all 0.3s;
-      }
+    }
 
-    li.borderXwidth a:before {
+    div.borderXwidth a:before
+    {
         left: 0px;
         top: 0px;
     }
 
-  li.borderXwidth a:after {
+  div.borderXwidth a:after
+    {
         right: 0px;
         bottom: 0px;
     }
 
-    li.borderXwidth a:hover:before,
-    li.borderXwidth a:hover:after {
+    div.borderXwidth a:hover:before, div.borderXwidth a:hover:after
+    {
         opacity: 1;
         width: 100%;
     }
 
-}
+
 
   /* ==============================
 X-large devices (1440px or larger)
@@ -419,7 +415,7 @@ X-large devices (1440px or larger)
 
 
 
-portaitmockup {
+portaitmockup{
   width: 30;
   max-width: 1200px;
   height: auto;
@@ -437,15 +433,14 @@ portaitmockup {
 
 @keyframes Cloud-move{
   from {transform: translate(0,50px);}
-  to {transform: translate(200px, 50px);}
-}
+  to {transform: translate(200px, 50px);} }
 
   .illustration {
     margin-left: 300px;
     margin-top: 100px
   }
 
-  #Smiley {
+  #Smiley{
     animation: moveSmiley;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -456,6 +451,4 @@ portaitmockup {
 
   @keyframes moveSmiley {
     to {
-      transform: translateY(80px);
-      }
-    }
+      transform: translateY(80px);}}
