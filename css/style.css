@@ -181,26 +181,32 @@ a:active {
   padding-bottom: 10px;
 }
 
+/* ---------------------------- INDEX / HOMEPAGE ---------------------------- */
+/* -------------------------------------------------------------------------- */
 #hero {
   background-color: #A44A3F;
   display: inline-block;
   width: 100%;
-  padding-top: 50px;
+  padding: 60px 0px 60px 16px;
 }
 
 #hero h1 {
-  text-align: center;
+  text-align: left;
   color: #000000
 }
 
 #hero p {
-  text-align: center;
+  text-align: left;
   color: #ffffff;
   font-size: 1.5em;
 }
 
 #hero span {
   display: block;
+}
+
+.hero.row {
+
 }
 
 #contact h2 {
@@ -303,6 +309,7 @@ footer {
   display: table;
 }
 
+
 .container {
   max-width: 1200px;
   margin-left: auto;
@@ -353,6 +360,7 @@ Medium devices (640px and higher)
   .col-md-7 {
     width: 58.33%;
   }
+}
 
   #aboutimage {
     float: left;
@@ -362,7 +370,6 @@ Medium devices (640px and higher)
     border: 3px solid rgba(164,74,63);
   }
 
-}
 
 /* ==============================
 Large devices (1024px or larger)
@@ -437,10 +444,19 @@ portaitmockup{
   to {transform: translate(200px, 50px);}
 }
 
+
+/* ------------ CSS ANIMATION ------------ */
+
   .illustration {
+    width: 100%;
+    height:auto;
+    position: relative;
     margin-left: 300px;
-    margin-top: 100px
+    margin-top: 100px;
+    margin-left: auto;
   }
+
+
 
   #Smiley {
     animation: moveSmiley;
