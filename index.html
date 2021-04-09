@@ -11,11 +11,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/01b7c8dea1.js" crossorigin="anonymous"></script>
   </head>
 
   <body id="home">
     <header>
       <div class="container borderXwidth">
+        	<div class="navtoggle" id="myNavtoggle">
         <a href="index.html">
           <picture>
             <source srcset="imgs/logo@1x.png" media="max-width:767px">
@@ -27,8 +29,10 @@
             <li class="container borderXwidth"><a href="index.html">Work</a></li>
             <li class="container borderXwidth"><a href="about.html">About</a></li>
             <li class="container borderXwidth"><a href="#contact">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
           </ul>
       </nav>
+    </div>
       </div>
     </header>
 
@@ -1814,7 +1818,7 @@
 <div id="work">
   <div class="container">
       <h2>Explore My Work</h2>
-
+<div class="box-mf">
           <div class="row">
 
             <!-- open row that holds (2) columns for project 1 -->
@@ -1833,10 +1837,11 @@
               <a href="gray.html" class="button">Read more</a>
             </div><!-- end second column -->
           </div><!-- end row that holds (2) columns for project 1 -->
-
+</div>
 
 
           <!--project 2-->
+          <div class="box-mf">
           <div class="row">
             <!-- open row that holds (2) columns for project 2 -->
             <div class="reverseimg">
@@ -1858,9 +1863,11 @@
             <a href="" class="button">Read more</a>
           </div><!-- end second column -->
         </div><!-- end row that holds (2) columns for project 2 -->
+      </div>
 
 
   <!--project 3-->
+  <div class="box-mf">
         <div class="row">
           <!-- open row that holds (2) columns for project 3 -->
           <div class="column col-md-6 col-lg-7">
@@ -1877,17 +1884,16 @@
             <p>Bored of meal prepping the same recipes? Truffle is a responsive web app that allows users to find a variety of new recipes tailored to their dietary needs and taste profile.</p>
             <p>User Interviews, User and Market Research, A/B Testing, Wireframing, and Prototyping</p>
             <a href="" class="button">Read more</a>
-
-
           </div><!-- end second column -->
         </div>
+</div>
 
         <!--project 4-->
+        <div class="box-mf">
         <div class="row">
           <!-- open row that holds (2) columns for project43 -->
           <div class="column col-md-6 col-lg-7">
             <!-- open first column (used for image) -->
-            <picture>
               <source srcset="imgs/Homepage/Project1_Vibesy@1x.png" media="(max-width:767px)">
               <img src="imgs/Homepage/Project1_Vibesy@2x.png" alt="Vibesy Case Study">
             </picture>
@@ -1901,10 +1907,10 @@
             <a href="" class="button">Read more</a>
           </div>
         </div>
-
+      </div>
       </div>
 
-</div>
+    </div>
     </main>
 
 
@@ -1959,6 +1965,10 @@
         </div>
       </div>
     </footer>
+    <script
+src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
   </body>
 

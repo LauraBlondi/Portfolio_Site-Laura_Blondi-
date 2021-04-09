@@ -23,7 +23,7 @@ body {
 header {
   background-color: #220802;
   text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   position: fixed;
   border-bottom: 2px solid #F19C79;
   width: 100%;
@@ -31,7 +31,7 @@ header {
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 90px;
 }
 
 nav {
@@ -42,6 +42,7 @@ nav {
 nav>ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 nav>ul>li {
@@ -52,6 +53,36 @@ nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   color: rgba(241.156, 121);
+}
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+/* our hamburger menu */
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
 nav>ul>li>a:hover {
@@ -190,6 +221,8 @@ a:active {
   padding: 60px 0px 60px 16px;
 }
 
+
+
 #hero h1 {
   text-align: left;
   color: #000000
@@ -205,8 +238,18 @@ a:active {
   display: block;
 }
 
-.hero.row {
 
+
+.box-mf {
+  padding: 40px 16px 32px 16px;
+  background-color: #ffffff -5;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 4px 1px 16px 0px #000000;
+  -moz-box-shadow: 4px 1px 16px 0px #000000;
+  box-shadow: 4px 1px 16px 0px #000000;
+  border-radius: 20px;
 }
 
 #contact h2 {
@@ -291,6 +334,8 @@ footer {
   text-align: center;
 }
 
+/* ---------------------------- COLUMN REFERENCE ----------------------------- */
+/* --------------------------------------------------------------------------- */
 
 [class*="col-"] {
   padding-left: 10px;
@@ -303,6 +348,46 @@ footer {
   padding-right: 10px;
   float: left;
 }
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+
+
 .row::after {
   content: "";
   clear: both;
@@ -335,9 +420,13 @@ footer {
 }
 
 
-/*=================================
-Medium devices (640px and higher)
-==================================*/
+/* --------------------------------------- MEDIA QUIERIES ---------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/*------------------------------------------------------------------------------------------------ */
+
+/* ===============================================================================================
+Medium devices (640px and larger)
+================================================================================================== */
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
@@ -349,7 +438,21 @@ Medium devices (640px and higher)
     float: right;
     margin-top: 25px;
   }
+  nav > ul > li {
+    display: inline-block;
+    position: relative;
+  }
 
+  nav>ul {
+    margin: 1em 0;
+  }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
   .col-md-5 {
     width: 41.66%;
   }
@@ -371,9 +474,9 @@ Medium devices (640px and higher)
   }
 
 
-/* ==============================
-Large devices (1024px or larger)
-================================= */
+  /* ==============================================================================================
+  Large devices (1024px or larger)
+  ================================================================================================== */
   @media only screen and (min-width: 1024px) {
     .col-lg-7 {
       width: 58.33%;
@@ -383,6 +486,9 @@ Large devices (1024px or larger)
       width: 41.66%;
     }
 
+
+
+/* ------------ NAV BAR ANIMATION ------------ */
 li.borderXwidth {
   position: relative;
 }
@@ -423,36 +529,14 @@ X-large devices (1440px or larger)
 
 
 
-portaitmockup{
-  width: 30;
-  max-width: 1200px;
-  height: auto;
-}
-
-
-#Cloud {
-  animation-duration: 5s;
-  animation-name: Cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-
-@keyframes Cloud-move{
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px, 50px);}
-}
-
-
 /* ------------ CSS ANIMATION ------------ */
 
   .illustration {
     width: 100%;
     height:auto;
-    position: relative;
+    position: static;
     margin-left: 300px;
-    margin-top: 100px;
+    margin-top: 80px;
     margin-left: auto;
   }
 
@@ -462,7 +546,7 @@ portaitmockup{
     animation: moveSmiley;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction: alternate-reverse;
     animation-timing-function: ease-in;
 
   }
@@ -472,7 +556,6 @@ portaitmockup{
       transform: translateY(80px);
     }
     }
-
 
 
   @keyframes color-change {
@@ -486,5 +569,19 @@ portaitmockup{
   animation-name: color-change;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
-  animation-direction: ease;
+  animation-direction: alternate-reverse;
+}
+
+#Cloud {
+  animation-duration: 5s;
+  animation-name: Cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+
+@keyframes Cloud-move{
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px, 50px);}
 }
