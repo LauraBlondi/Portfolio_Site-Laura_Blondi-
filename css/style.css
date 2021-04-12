@@ -7,7 +7,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-family: 'Quicksand', sans-serif;
   font-size: 14px;
-  /*sets font size to size 16*/
+  /*sets font size to size 14*/
   font-weight: 300;
   line-height: 1.6;
   color: #FEE3E0;
@@ -128,7 +128,7 @@ h4 {
 }
 
 #logo {
-  max-width: 130px;
+  max-width: 100px;
 }
 
 
@@ -218,26 +218,19 @@ a:active {
   background-color: #A44A3F;
   display: inline-block;
   width: 100%;
-  padding: 60px 0px 60px 16px;
+  padding: 90px 15px 0px 30px;
 }
 
-
-
-#hero h1 {
-  text-align: left;
-  color: #000000
-}
-
-#hero p {
-  text-align: left;
-  color: #ffffff;
-  font-size: 1.5em;
-}
 
 #hero span {
   display: block;
 }
 
+#Hero_Image {
+  max-width: 600px;
+  padding-top: 100px;
+  padding-left: 35;
+}
 
 
 .box-mf {
@@ -259,11 +252,11 @@ a:active {
 
 #contact svg {
   width: auto;
-  height: 45px;
+  height: 40px;
 }
 
 #copyright p {
-  text-align: center;
+  text-align: center;;
 }
 
 footer {
@@ -286,36 +279,17 @@ footer {
 
 
 
-#Project4_Gray {
-  padding-top: 180px;
-  max-width: 900px;
-
-}
-
-#Project4_Gray h1 {
-  text-align: center;
-}
-
-#Project4_Gray h2 {
-  text-align: center;
-  font-family: 'Quicksand', sans-serif;
-}
-
-#casestudy4 {
-  padding-left: 20px;
-  padding-right: 20px;
-  max-width: 100px;
-  height: auto;
-}
 
 
+/* ---------------------------- ABOUT PAGE ---------------------------- */
+/* -------------------------------------------------------------------------- */
 
 #aboutimage {
   max-width: 300px
 }
 
 #aboutme {
-  padding-top:180px;
+  padding-top:130px;
 }
 
 #aboutme h1 {
@@ -333,6 +307,140 @@ footer {
 .row-about-resume {
   text-align: center;
 }
+
+#aboutimage {
+  float: left;
+  margin: 0 12px 12px 0;
+  max-width: 300px;
+  border-radius: 10px;
+  border: 3px solid rgba(164,74,63);
+}
+
+.skills_tools {
+  padding-left: 60px;
+}
+
+
+/* ---------------------------- GRAY/PROJECT 4 ---------------------------- */
+/* -------------------------------------------------------------------------- */
+
+#casestudy4 {
+  background-color: #E6DDDE
+}
+
+#Gray_MainImage {
+  height: 200px;
+  width: auto;
+}
+.Gray_main{
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#Gray_UserFlow {
+  height: 300px;
+  width: auto;
+}
+
+.Gray_UserFlow {
+  margin: 100px;
+}
+
+#Gray_DesignProcess {
+  height: 300px;
+  width: auto;
+}
+.Gray_DesignProcess {
+  padding: 0 100px 20px 100px;
+  margin: 20px
+}
+
+.Gray_ideation {
+  margin: 150px;
+}
+
+.Gray_ideation h2 {
+  color: #1E275C;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+}
+
+.Gray_ideation p {
+  color: #1E275C;
+}
+
+
+#Gray_Crazy8v1 {
+  height: 200px;
+  width: auto;
+}
+
+#Gray_Crazy8v2 {
+  height: 200px;
+  width: auto;
+}
+
+.Gray_MidfiWireframes h2 {
+  color: #1E275C;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.Gray_MidfiWireframes p {
+  color: #1E275C;
+}
+
+.Gray_MidfiWireframes {
+  margin: 100px 100px 80px 100px;
+  padding-right: 100px
+}
+
+#Gray_homemidfi {
+  margin-right: 100px;
+}
+
+#Gray_addfriendsmidfi {
+  margin-left: 100px;
+}
+
+#Gray_Profilemidfi {
+  margin-right: 100px
+}
+
+#Gray_checklistmidfi {
+  margin-left: 100px;
+}
+
+.onboarding {
+  margin: 100px;
+}
+
+.Gray_social {
+  margin: 100px;
+}
+
+.Conclusion h2 {
+  color: #1E275C;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.Conclusion p {
+  color: #1E275C;
+}
+
+.Conclusion {
+  margin: 100px;
+}
+
+.Gray_Mockups {
+  margin: 100px;
+}
+
+.Gray_Mockups h1 {
+  text-align: center;
+  color: #1E275C;
+}
+
 
 /* ---------------------------- COLUMN REFERENCE ----------------------------- */
 /* --------------------------------------------------------------------------- */
@@ -463,15 +571,17 @@ Medium devices (640px and larger)
   .col-md-7 {
     width: 58.33%;
   }
+
+#hero {
+    padding: 0px 15px 0px 30px;
+  }
+
+.skills_tools {
+  padding-left: 220px;
 }
 
-  #aboutimage {
-    float: left;
-    margin: 0 12px 12px 0;
-    max-width: 300px;
-    border-radius: 10px;
-    border: 3px solid rgba(164,74,63);
-  }
+
+}
 
 
   /* ==============================================================================================
@@ -532,12 +642,10 @@ X-large devices (1440px or larger)
 /* ------------ CSS ANIMATION ------------ */
 
   .illustration {
-    width: 100%;
+    width: 90%;
     height:auto;
     position: static;
-    margin-left: 300px;
-    margin-top: 80px;
-    margin-left: auto;
+
   }
 
 
