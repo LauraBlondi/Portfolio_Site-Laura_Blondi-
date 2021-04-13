@@ -218,19 +218,19 @@ a:active {
   background-color: #A44A3F;
   display: inline-block;
   width: 100%;
-  padding: 90px 15px 0px 30px;
+  padding: 40px 25px 0px 25px;
 }
 
 
 #hero span {
   display: block;
+  margin: auto;
 }
 
-#Hero_Image {
-  max-width: 600px;
-  padding-top: 100px;
-  padding-left: 35;
-}
+.illustration {
+    display: block;
+    margin: auto;
+  }
 
 
 .box-mf {
@@ -572,14 +572,15 @@ Medium devices (640px and larger)
     width: 58.33%;
   }
 
-#hero {
-    padding: 0px 15px 0px 30px;
-  }
-
 .skills_tools {
   padding-left: 220px;
 }
-
+#hero {
+  background-color: #A44A3F;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 25px 0px 20px;
+}
 
 }
 
@@ -642,7 +643,7 @@ X-large devices (1440px or larger)
 /* ------------ CSS ANIMATION ------------ */
 
   .illustration {
-    width: 90%;
+    width: 70%;
     height:auto;
     position: static;
 
