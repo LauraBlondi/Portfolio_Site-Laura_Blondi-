@@ -54,6 +54,7 @@ nav>ul>li>a {
   text-transform: uppercase;
   color: rgba(241.156, 121);
 }
+
 .navtoggle li:not(:last-child) {
   display: none;
 }
@@ -256,7 +257,7 @@ a:active {
 }
 
 #copyright p {
-  text-align: center;;
+  text-align: center;
 }
 
 footer {
@@ -316,9 +317,6 @@ footer {
   border: 3px solid rgba(164,74,63);
 }
 
-.skills_tools {
-  padding-left: 60px;
-}
 
 
 /* ---------------------------- GRAY/PROJECT 4 ---------------------------- */
@@ -494,162 +492,40 @@ footer {
   width: 100%;
 }
 
-
-
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
 
-
 .container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 15px
 }
 
-@keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
-}
+/* ---------------------------- CSS ANIMATION ----------------------------- */
+/* --------------------------------------------------------------------------- */
 
 .cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 15s cloud-move-reverse infinite alternate linear;
 }
 
 .sun {
-  animation-duration: 4s;
+  animation-duration: 2s;
   animation-name: color-change;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
 }
 
-
-/* --------------------------------------- MEDIA QUIERIES ---------------------------------------- */
-/* ----------------------------------------------------------------------------------------------- */
-/*------------------------------------------------------------------------------------------------ */
-
-/* ===============================================================================================
-Medium devices (640px and larger)
-================================================================================================== */
-@media only screen and (min-width: 640px) {
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
-  }
-
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 25px;
-  }
-  nav > ul > li {
-    display: inline-block;
-    position: relative;
-  }
-
-  nav>ul {
-    margin: 1em 0;
-  }
-  .navtoggle li:not(:last-child) {
-    display: inline-block;
-  }
-
-  .navtoggle li:last-child {
-    display: none;
-  }
-  .col-md-5 {
-    width: 41.66%;
-  }
-  .col-md-6 {
-    width: 50%;
-    float: left;
-  }
-  .col-md-7 {
-    width: 58.33%;
-  }
-
-.skills_tools {
-  padding-left: 220px;
-}
-#hero {
-  background-color: #A44A3F;
-  display: inline-block;
-  width: 100%;
-  padding: 10px 25px 0px 20px;
-}
-
-}
-
-
-  /* ==============================================================================================
-  Large devices (1024px or larger)
-  ================================================================================================== */
-  @media only screen and (min-width: 1024px) {
-    .col-lg-7 {
-      width: 58.33%;
-    }
-
-    .col-lg-5 {
-      width: 41.66%;
-    }
-
-
-
-/* ------------ NAV BAR ANIMATION ------------ */
-li.borderXwidth {
-  position: relative;
-}
-
-    li.borderXwidth a:before,
-    li.borderXwidth a:after {
-        position: absolute;
-        opacity: 0;
-        width: 0%;
-        height: 2px;
-        content: '';
-        background: #F19C79;
-        transition: all 0.3s;
-    }
-
-    li.borderXwidth a:before {
-        left: 0px;
-        top: 0px;
-    }
-
-  li.borderXwidth a:after {
-        right: 0px;
-        bottom: 0px;
-    }
-
-    li.borderXwidth a:hover:before,
-    li.borderXwidth a:hover:after {
-        opacity: 1;
-        width: 100%;
-    }
-}
-
-
-  /* ==============================
-X-large devices (1440px or larger)
-================================= */
-  @media only screen and (min-width: 1440px) {}
-
-
-
-/* ------------ CSS ANIMATION ------------ */
-
   .illustration {
-    width: 70%;
+    width: 65%;
     height:auto;
     position: static;
 
   }
-
-
 
   #Smiley {
     animation: moveSmiley;
@@ -662,10 +538,9 @@ X-large devices (1440px or larger)
 
   @keyframes moveSmiley {
     to {
-      transform: translateY(80px);
+      transform: translateY(90px);
     }
     }
-
 
   @keyframes color-change {
     0% {fill: #E496A0;}
@@ -693,4 +568,120 @@ X-large devices (1440px or larger)
 @keyframes Cloud-move{
   from {transform: translate(0,50px);}
   to {transform: translate(200px, 50px);}
+}
+
+
+/* --------------------------------------- MEDIA QUIERIES ---------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/*------------------------------------------------------------------------------------------------ */
+
+/* ===============================================================================================
+Medium devices (640px and larger)
+================================================================================================== */
+@media only screen and (min-width: 640px) {
+
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 25px;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+    position: relative;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .col-md-5 {
+    width: 41.66%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+    float: left;
+  }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  .skills_tools {
+  padding-left: 220px;
+  }
+
+  #hero {
+  background-color: #A44A3F;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 25px 0px 20px;
+  }
+
+  main {
+  padding-top: 45px;
+}
+
+}
+
+
+  /* ==============================================================================================
+  Large devices (1024px or larger)
+  ================================================================================================== */
+  @media only screen and (min-width: 1024px) {
+    .col-lg-7 {
+      width: 58.33%;
+    }
+
+    .col-lg-5 {
+      width: 41.66%;
+    }
+
+
+
+/* ------------ NAV BAR ANIMATION ------------ */
+  li.borderXwidth {
+  position: relative;
+  }
+
+    li.borderXwidth a:before,
+    li.borderXwidth a:after {
+        position: absolute;
+        opacity: 0;
+        width: 0%;
+        height: 2px;
+        content: '';
+        background: #F19C79;
+        transition: all 0.3s;
+    }
+
+    li.borderXwidth a:before {
+        left: 0px;
+        top: 0px;
+    }
+
+  li.borderXwidth a:after {
+        right: 0px;
+        bottom: 0px;
+    }
+
+    li.borderXwidth a:hover:before,
+    li.borderXwidth a:hover:after {
+        opacity: 1;
+        width: 100%;
+    }
 }
