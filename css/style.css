@@ -52,7 +52,7 @@ nav>ul>li {
 nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
-  color: rgba(241.156, 121);
+  color: rgba(241,156,121);
 }
 
 .navtoggle li:not(:last-child) {
@@ -76,10 +76,10 @@ nav>ul>li>a {
   padding: 24px 0 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
 .navtoggle.responsive li:last-child {
@@ -87,12 +87,12 @@ nav>ul>li>a {
 }
 
 nav>ul>li>a:hover {
-  color: rgba(241.156, 121);
+  color: rgba(241,156,121);
   text-decoration: underline;
 }
 
 nav>ul>li>a:focus {
-  color: rgba(241.156, 121);
+  color: rgba(241,156,121);
   text-decoration: underline;
 }
 
@@ -132,12 +132,10 @@ h4 {
   max-width: 100px;
 }
 
-
 img {
   width: 100%;
   height: auto;
 }
-
 
 a {
   color: #F19C79;
@@ -219,24 +217,29 @@ a:active {
   background-color: #A44A3F;
   display: inline-block;
   width: 100%;
-  padding: 40px 25px 0px 25px;
+  padding: 40px 40px 0px 25px;
 }
-
 
 #hero span {
   display: block;
   margin: auto;
 }
 
-.illustration {
-    display: block;
-    margin: auto;
-  }
+#hero_illustration {
+  width: 220%;
+  height: auto;
+  display: block;
 
+}
+
+.illustration {
+  display: block;
+  padding: 0px 50px 0px 0px;
+}
 
 .box-mf {
   padding: 40px 16px 32px 16px;
-  background-color: #ffffff -5;
+  background-color: #212121;
   display: inline-block;
   width: 100%;
   margin-bottom: 30px;
@@ -278,19 +281,14 @@ footer {
   padding: 20px 8px;
 }
 
-
-
-
-
 /* ---------------------------- ABOUT PAGE ---------------------------- */
 /* -------------------------------------------------------------------------- */
-
 #aboutimage {
   max-width: 300px
 }
 
 #aboutme {
-  padding-top:130px;
+  padding-top: 130px;
 }
 
 #aboutme h1 {
@@ -314,14 +312,11 @@ footer {
   margin: 0 12px 12px 0;
   max-width: 300px;
   border-radius: 10px;
-  border: 3px solid rgba(164,74,63);
+  border: 3px solid rgba(164, 74, 63);
 }
-
-
 
 /* ---------------------------- GRAY/PROJECT 4 ---------------------------- */
 /* -------------------------------------------------------------------------- */
-
 #casestudy4 {
   background-color: #E6DDDE
 }
@@ -330,7 +325,8 @@ footer {
   height: 200px;
   width: auto;
 }
-.Gray_main{
+
+.Gray_main {
   padding-top: 100px;
   padding-left: 50px;
   padding-right: 50px;
@@ -349,6 +345,7 @@ footer {
   height: 300px;
   width: auto;
 }
+
 .Gray_DesignProcess {
   padding: 0 100px 20px 100px;
   margin: 20px
@@ -367,7 +364,6 @@ footer {
 .Gray_ideation p {
   color: #1E275C;
 }
-
 
 #Gray_Crazy8v1 {
   height: 200px;
@@ -439,10 +435,8 @@ footer {
   color: #1E275C;
 }
 
-
 /* ---------------------------- COLUMN REFERENCE ----------------------------- */
 /* --------------------------------------------------------------------------- */
-
 [class*="col-"] {
   padding-left: 10px;
   padding-right: 10px;
@@ -458,36 +452,47 @@ footer {
 .col-1 {
   width: 8.33%;
 }
+
 .col-2 {
   width: 16.66%;
 }
+
 .col-3 {
   width: 25%;
 }
+
 .col-4 {
   width: 33.33%;
 }
+
 .col-5 {
   width: 41.66%;
 }
+
 .col-6 {
   width: 50%;
 }
+
 .col-7 {
   width: 58.33%;
 }
+
 .col-8 {
   width: 66.66%;
 }
+
 .col-9 {
   width: 75%;
 }
+
 .col-10 {
   width: 83.33%;
 }
+
 .col-11 {
   width: 91.66%;
 }
+
 .col-12 {
   width: 100%;
 }
@@ -507,7 +512,6 @@ footer {
 
 /* ---------------------------- CSS ANIMATION ----------------------------- */
 /* --------------------------------------------------------------------------- */
-
 .cloud-back {
   animation: 15s cloud-move-reverse infinite alternate linear;
 }
@@ -520,33 +524,39 @@ footer {
   animation-timing-function: linear;
 }
 
-  .illustration {
-    width: 65%;
-    height:auto;
-    position: static;
+.illustration {
+  width: 65%;
+  height: auto;
+  position: static;
+}
 
+#Smiley {
+  animation: moveSmiley;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in;
+}
+
+@keyframes moveSmiley {
+  to {
+    transform: translateY(90px);
+  }
+}
+
+@keyframes color-change {
+  0% {
+    fill: #E496A0;
   }
 
-  #Smiley {
-    animation: moveSmiley;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-    animation-timing-function: ease-in;
-
+  50% {
+    fill: #D16243;
   }
 
-  @keyframes moveSmiley {
-    to {
-      transform: translateY(90px);
-    }
-    }
-
-  @keyframes color-change {
-    0% {fill: #E496A0;}
-    50% {fill: #D16243;}
-    100% {fill: #A44A3F;}
+  100% {
+    fill: #A44A3F;
   }
+}
 
 #screen {
   animation-duration: 4s;
@@ -564,22 +574,23 @@ footer {
   animation-timing-function: linear;
 }
 
+@keyframes Cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
 
-@keyframes Cloud-move{
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px, 50px);}
+  to {
+    transform: translate(200px, 50px);
+  }
 }
-
 
 /* --------------------------------------- MEDIA QUIERIES ---------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 /*------------------------------------------------------------------------------------------------ */
-
 /* ===============================================================================================
 Medium devices (640px and larger)
 ================================================================================================== */
 @media only screen and (min-width: 640px) {
-
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -591,7 +602,7 @@ Medium devices (640px and larger)
     margin-top: 25px;
   }
 
-  nav > ul > li {
+  nav>ul>li {
     display: inline-block;
     position: relative;
   }
@@ -622,66 +633,75 @@ Medium devices (640px and larger)
   }
 
   .skills_tools {
-  padding-left: 220px;
+    padding-left: 220px;
   }
 
   #hero {
-  background-color: #A44A3F;
-  display: inline-block;
-  width: 100%;
-  padding: 10px 25px 0px 20px;
+    background-color: #A44A3F;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 25px 0px 20px;
   }
 
   main {
-  padding-top: 45px;
-}
-
-}
-
-
-  /* ==============================================================================================
-  Large devices (1024px or larger)
-  ================================================================================================== */
-  @media only screen and (min-width: 1024px) {
-    .col-lg-7 {
-      width: 58.33%;
-    }
-
-    .col-lg-5 {
-      width: 41.66%;
-    }
-
-
-
-/* ------------ NAV BAR ANIMATION ------------ */
-  li.borderXwidth {
-  position: relative;
+    padding-top: 45px;
   }
 
-    li.borderXwidth a:before,
-    li.borderXwidth a:after {
-        position: absolute;
-        opacity: 0;
-        width: 0%;
-        height: 2px;
-        content: '';
-        background: #F19C79;
-        transition: all 0.3s;
-    }
+  .illustration {
+    display: block;
+    margin: auto;
+    padding: 40px 25px 0px 25px
+  }
+  #hero_illustration {
+    width: 106%;
+    height: auto;
+    display: block;
 
-    li.borderXwidth a:before {
-        left: 0px;
-        top: 0px;
-    }
+  }
+
+}
+
+/* ==============================================================================================
+  Large devices (1024px or larger)
+  ================================================================================================== */
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  /* ------------ NAV BAR ANIMATION ------------ */
+  li.borderXwidth {
+    position: relative;
+  }
+
+  li.borderXwidth a:before,
+  li.borderXwidth a:after {
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #F19C79;
+    transition: all 0.3s;
+  }
+
+  li.borderXwidth a:before {
+    left: 0px;
+    top: 0px;
+  }
 
   li.borderXwidth a:after {
-        right: 0px;
-        bottom: 0px;
-    }
+    right: 0px;
+    bottom: 0px;
+  }
 
-    li.borderXwidth a:hover:before,
-    li.borderXwidth a:hover:after {
-        opacity: 1;
-        width: 100%;
-    }
+  li.borderXwidth a:hover:before,
+  li.borderXwidth a:hover:after {
+    opacity: 1;
+    width: 100%;
+  }
 }
