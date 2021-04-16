@@ -217,7 +217,7 @@ a:active {
   background-color: #A44A3F;
   display: inline-block;
   width: 100%;
-  padding: 40px 40px 0px 25px;
+  padding: 50px 40px 0px 25px;
 }
 
 #hero span {
@@ -226,7 +226,7 @@ a:active {
 }
 
 #hero_illustration {
-  width: 220%;
+  width: 200%;
   height: auto;
   display: block;
 
@@ -234,8 +234,12 @@ a:active {
 
 .illustration {
   display: block;
-  padding: 0px 50px 0px 0px;
 }
+
+.path.st0 {
+  padding-right: 30px
+}
+
 
 .box-mf {
   padding: 40px 16px 32px 16px;
