@@ -767,7 +767,9 @@ Medium devices (640px and larger)
   #shaded {
     background-color: #8AC4AE;
     margin: 0px 100px 100px 100px;
-    padding-top: 180px
+    padding-top: 180px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   #Shaded_process {
