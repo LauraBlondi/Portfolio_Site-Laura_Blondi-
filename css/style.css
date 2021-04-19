@@ -439,6 +439,13 @@ footer {
   padding-top: 160px
 }
 
+/* ----------------------------VIBESY/PROJECT 1 ---------------------------- */
+/* -------------------------------------------------------------------------- */
+#vibesy {
+  padding-top: 180px;
+  margin: 0 40px 12px 40px;
+  background-color: #B6BBEA
+}
 
 
 
@@ -776,6 +783,13 @@ Medium devices (640px and larger)
     width: 70%;
     height: auto;
   }
+
+  #vibesy {
+    padding-top: 150px;
+    margin: 0 130px 50px 130px;
+    background-color: #B6BBEA;
+  }
+
 }
 
 /* ==============================================================================================
