@@ -322,7 +322,8 @@ footer {
 
 /* ---------------------------- GRAY/PROJECT 4 ---------------------------- */
 /* -------------------------------------------------------------------------- */
-#casestudy4 {
+#gray {
+  padding: 0 10px 10px 10px;
   background-color: #E6DDDE
 }
 
@@ -332,9 +333,8 @@ footer {
 }
 
 .Gray_main {
-  padding-top: 100px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-top: 150px;
+
 }
 
 #Gray_UserFlow {
@@ -342,9 +342,6 @@ footer {
   width: auto;
 }
 
-.Gray_UserFlow {
-  margin: 100px;
-}
 
 #Gray_DesignProcess {
   height: 300px;
@@ -353,12 +350,8 @@ footer {
 
 .Gray_DesignProcess {
   padding: 0 100px 20px 100px;
-  margin: 20px
 }
 
-.Gray_ideation {
-  margin: 150px;
-}
 
 .Gray_ideation h2 {
   color: #1E275C;
@@ -390,12 +383,11 @@ footer {
 }
 
 .Gray_MidfiWireframes {
-  margin: 100px 100px 80px 100px;
-  padding-right: 100px
+  margin: 10px 10px 40px 10px;
+  padding-right: 10px
 }
 
 #Gray_homemidfi {
-  margin-right: 100px;
 }
 
 #Gray_addfriendsmidfi {
@@ -439,6 +431,16 @@ footer {
   text-align: center;
   color: #1E275C;
 }
+/* ---------------------------- SHADED/PROJECT 3 ---------------------------- */
+/* -------------------------------------------------------------------------- */
+#shaded {
+  background-color: #8AC4AE;
+  margin: 0px 20px 10px 20px;
+  padding-top: 160px
+}
+
+
+
 
 /* ---------------------------- COLUMN REFERENCE ----------------------------- */
 /* --------------------------------------------------------------------------- */
@@ -662,10 +664,116 @@ Medium devices (640px and larger)
     width: 106%;
     height: auto;
     display: block;
-
-
   }
 
+  /* ---------------------------- GRAY/PROJECT 4 ---------------------------- */
+  /* -------------------------------------------------------------------------- */
+  #gray {
+    background-color: #E6DDDE
+  }
+
+  #Gray_MainImage {
+    height: 200px;
+    width: auto;
+  }
+
+  .Gray_main {
+    padding-top: 150px;
+  }
+
+  #Gray_UserFlow {
+    height: 300px;
+    width: auto;
+  }
+
+
+  #Gray_DesignProcess {
+    height: 300px;
+    width: auto;
+  }
+
+  .Gray_DesignProcess {
+    padding: 0 100px 20px 100px;
+  }
+
+
+  .Gray_ideation h2 {
+    color: #1E275C;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+  }
+
+  .Gray_ideation p {
+    color: #1E275C;
+  }
+
+  #Gray_Crazy8v1 {
+    height: 200px;
+    width: auto;
+  }
+
+  #Gray_Crazy8v2 {
+    height: 200px;
+    width: auto;
+  }
+
+  .Gray_MidfiWireframes h2 {
+    color: #1E275C;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .Gray_MidfiWireframes p {
+    color: #1E275C;
+  }
+
+  #Gray_homemidfi {
+    margin-right: 120px;
+  }
+
+  #Gray_addfriendsmidfi {
+    margin-left: 150px;
+  }
+
+  #Gray_checklistmidfi {
+    margin-left: 150px;
+  }
+
+#Gray_onboarding {
+  padding: 10px
+}
+
+  .Conclusion h2 {
+    color: #1E275C;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .Conclusion p {
+    color: #1E275C;
+  }
+
+  .Gray_Mockups {
+    margin: 100px;
+  }
+
+  .Gray_Mockups h1 {
+    text-align: center;
+    color: #1E275C;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  #shaded {
+    background-color: #8AC4AE;
+    margin: 0px 100px 100px 100px;
+    padding-top: 180px
+  }
+
+  #Shaded_process {
+    width: 70%;
+    height: auto;
+  }
 }
 
 /* ==============================================================================================
