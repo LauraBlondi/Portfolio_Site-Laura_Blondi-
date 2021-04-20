@@ -8,7 +8,3 @@ function menuToggle () {
     x.className = 'navtoggle'
   }
 }
-
-$(document).ready(function(){
-    $('.rslides').responsiveSlides();
-})
