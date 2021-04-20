@@ -2,13 +2,13 @@
   <html lang="en" dir="ltr">
 
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"/>
     <title>Laura Blondi Ui UX Designer</title>
-    <link rel="shortcut icon" type="image/png" href="./imgs/Favicon@1x.png" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel= "shortcut icon" type= "image/png" href="./imgs/Favicon@1x.png"/>
+    <link rel= "stylesheet" type= "text/css" href= "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -3299,8 +3299,6 @@
 
 
 
-
-
         <div id="work">
           <div class="container">
             <h2>Explore My Work</h2>
@@ -3310,10 +3308,24 @@
                 <!-- open row that holds (2) columns for project 1 -->
                 <div class="column col-md-6 col-lg-7">
                   <!-- open first column (used for image) -->
-                  <picture>
-                    <source srcset="imgs/Homepage/Project4_Gray@1x.png" media="(max-width:767px)">
-                    <img src="imgs/Homepage/Project4_Gray@2x.png" alt="Gray Case Study">
-                  </picture>
+                  <ul class="rslides">
+                    <li>
+                      <picture>
+                        <source srcset="imgs/Homepage/Project4_Gray@1x.png" media="(max-width:767px)"/>
+                        <img src="imgs/Homepage/Project4_Gray@2x.png" alt="Gray Case Study"/>
+                      </picture>
+                    </li>
+
+                    <li>
+                      <picture>
+                        <source srcset="imgs/gray/android_mockup@1x.png" media="(max-width:767px)">
+                        <img src="imgs/gray/android_mockup@2x.png" alt="Gray Case Study">
+                      </picture>
+                    </li>
+                  </ul>
+
+
+
                 </div><!-- end first column -->
                 <div class="column col-md-6 col-lg-5">
                   <!-- open second column (used for text) -->
@@ -3462,6 +3474,7 @@
         </div>
       </footer>
       <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script src="./js/responsiveslides.min.js"></script>
       <script src="js/scripts.js"></script>
     </body>
 
