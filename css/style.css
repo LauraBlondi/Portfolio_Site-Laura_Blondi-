@@ -239,8 +239,6 @@ a:active {
 }
 
 
-
-
 .box-mf {
   padding: 40px 16px 32px 16px;
   background-color: #212121;
@@ -305,9 +303,10 @@ footer {
 }
 
 #aboutme p{
+font-family:'Open Sans', sans-serif;
 line-height: 2.4;
 font-size: 15px;
-font-weight: 400;
+font-weight: 300;
 
 }
 
