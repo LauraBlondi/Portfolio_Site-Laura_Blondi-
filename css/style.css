@@ -567,20 +567,13 @@ Medium devices (640px and larger)
     padding-top: 45px;
   }
 
-  .illustration {
-    display: block;
-    margin: auto;
-    width: 65%;
-    height: auto;
-    position: static;
-    padding: 50px 50px 0px 25px;
-    margin-right: 230px;
-  }
+
 
   #hero_illustration {
-    width: 106%;
+    width: 90%;
     height: auto;
     display: block;
+    margin: 70px 0px 0px 50px;
   }
 
   #gray {
@@ -670,5 +663,13 @@ Medium devices (640px and larger)
   li.borderXwidth a:hover:after {
     opacity: 1;
     width: 100%;
+  }
+
+
+  #hero_illustration {
+    width: 73%;
+    height: auto;
+    display: block;
+    margin: 30px 0px 0px 168px;
   }
 }
