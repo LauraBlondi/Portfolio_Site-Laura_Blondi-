@@ -574,7 +574,6 @@ Medium devices (640px and larger)
     height: auto;
     display: block;
     margin: 70px 0px 0px 50px;
-
   }
 
   #gray {
@@ -656,5 +655,13 @@ Medium devices (640px and larger)
   li.borderXwidth a:hover:after {
     opacity: 1;
     width: 100%;
+  }
+
+
+  #hero_illustration {
+    width: 73%;
+    height: auto;
+    display: block;
+    margin: 30px 0px 0px 168px;
   }
 }
