@@ -358,6 +358,12 @@ font-weight: 300;
   background-color: #FFFFFF;
 }
 
+/* ---------------------------- ABOUT PAGE ---------------------------- */
+#Portfolio_main {
+  padding-top: 120px;
+  margin: 0 40px 12px 40px;
+}
+
 /* ---------------------------- COLUMN REFERENCE ----------------------------- */
 /* --------------------------------------------------------------------------- */
 [class*="col-"] {
@@ -609,6 +615,19 @@ Medium devices (640px and larger)
   padding-top: 150px;
   margin: 0 130px 50px 130px;
   background-color: #FFFFFF;
+}
+
+#aboutimage {
+  float: left;
+  margin: 0 12px 12px 0;
+  max-width: 300px;
+  border-radius: 10px;
+  border: 3px solid rgba(164, 74, 63);
+}
+
+#Portfolio_main {
+  padding-top: 80px;
+  margin: 0 130px 50px 130px;
 }
 }
 
