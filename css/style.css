@@ -618,6 +618,11 @@ Medium devices (640px and larger)
   border-radius: 10px;
   border: 3px solid rgba(164, 74, 63);
 }
+
+#Portfolio_main {
+  padding-top: 80px;
+  margin: 0 150px 50px 150px;
+}
 }
 
 /* ==============================================================================================
