@@ -55,6 +55,38 @@ nav>ul>li>a {
   color: rgba(241,156,121);
 }
 
+/* ------------ NAV BAR ANIMATION ------------ */
+li.borderXwidth {
+  position: relative;
+}
+
+li.borderXwidth a:before,
+li.borderXwidth a:after {
+  position: absolute;
+  opacity: 0;
+  width: 0%;
+  height: 2px;
+  content: '';
+  background: #F19C79;
+  transition: all 0.3s;
+}
+
+li.borderXwidth a:before {
+  left: 0px;
+  top: 0px;
+}
+
+li.borderXwidth a:after {
+  right: 0px;
+  bottom: 0px;
+}
+
+li.borderXwidth a:hover:before,
+li.borderXwidth a:hover:after {
+  opacity: 1;
+  width: 100%;
+}
+
 .navtoggle li:not(:last-child) {
   display: none;
 }
@@ -635,38 +667,6 @@ Medium devices (640px and larger)
 
   .col-lg-5 {
     width: 41.66%;
-  }
-
-  /* ------------ NAV BAR ANIMATION ------------ */
-  li.borderXwidth {
-    position: relative;
-  }
-
-  li.borderXwidth a:before,
-  li.borderXwidth a:after {
-    position: absolute;
-    opacity: 0;
-    width: 0%;
-    height: 2px;
-    content: '';
-    background: #F19C79;
-    transition: all 0.3s;
-  }
-
-  li.borderXwidth a:before {
-    left: 0px;
-    top: 0px;
-  }
-
-  li.borderXwidth a:after {
-    right: 0px;
-    bottom: 0px;
-  }
-
-  li.borderXwidth a:hover:before,
-  li.borderXwidth a:hover:after {
-    opacity: 1;
-    width: 100%;
   }
 
 
