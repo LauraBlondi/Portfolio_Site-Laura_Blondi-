@@ -3,14 +3,14 @@
 }
 
 body {
-  background-color: #212121;
+  background-color: #000000;
   font-family: 'Open Sans', sans-serif;
   font-family: 'Quicksand', sans-serif;
   font-size: 14px;
   /*sets font size to size 14*/
   font-weight: 300;
   line-height: 1.6;
-  color: #FEE3E0;
+  color: #FFFFFF;
 }
 
 /*Colors Used
@@ -21,11 +21,11 @@ body {
   Color 5: rgba(58,14,3)
 */
 header {
-  background-color: #220802;
+  background-color: #000000;
   text-align: center;
   padding: 10px 0 4px;
   position: fixed;
-  border-bottom: 2px solid #F19C79;
+  border-bottom: 2px solid #FFFFFF;
   width: 100%;
   display: inline-block;
 }
@@ -52,7 +52,7 @@ nav>ul>li {
 nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
-  color: rgba(241,156,121);
+  color: #FFFFFF;
 }
 
 /* ------------ NAV BAR ANIMATION ------------ */
@@ -241,6 +241,7 @@ a:active {
   font-size: 2.5em;
   padding-top: 15px;
   padding-bottom: 10px;
+  color: #ffffff
 }
 
 /* ---------------------------- INDEX / HOMEPAGE ---------------------------- */
@@ -298,11 +299,11 @@ a:active {
 }
 
 footer {
-  background-color: #220802;
+  background-color: #000000;
   text-align: center;
   padding: 10px 0;
   width: 100%;
-  border-top: 2px solid #F19C79;
+  border-top: 2px solid #FFFFFF;
 }
 
 .social>ul {
@@ -372,6 +373,8 @@ text-align: left;
   margin: 0px 20px 10px 20px;
   padding-top: 160px
 }
+#Project5 {
+  background-color: #8AC4AE}
 
 /* ----------------------------VIBESY/PROJECT 1 ---------------------------- */
 /* -------------------------------------------------------------------------- */
@@ -379,6 +382,10 @@ text-align: left;
   padding-top: 180px;
   margin: 0 40px 12px 40px;
   background-color: #B6BBEA
+}
+
+#Project1 {
+  background-color: #B6BBEA;
 }
 
 
@@ -588,7 +595,7 @@ Medium devices (640px and larger)
   }
 
   #hero {
-    background-color: #A44A3F;
+    background-color: #000000;
     display: inline-block;
     width: 100%;
     padding: 10px 25px 0px 20px;
@@ -613,6 +620,9 @@ Medium devices (640px and larger)
     margin: 0 130px 50px 130px;
   }
 
+ #graybody{
+   background-color: #E6DDDE;
+ }
 
   .col-lg-5 {
     width: 41.66%;
@@ -641,6 +651,10 @@ Medium devices (640px and larger)
   padding-top: 150px;
   margin: 0 130px 50px 130px;
   background-color: #FFFFFF;
+}
+
+#Project3{
+  background-color:  #FFFFFF;
 }
 
 #aboutimage {
